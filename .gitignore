@@ -1,0 +1,27 @@
+# ---------- Qt 编译产生的中间文件 ----------
+build/
+build-*/
+debug/
+release/
+*.o
+*.obj
+*.a
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile
+Makefile.*
+*.pro.user
+*.pro.user.*
+.qmake.stash
+*.exe
+*.dll
+
+# ---------- 编辑器 / 系统文件 ----------
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store
