@@ -7,10 +7,12 @@ TEMPLATE = app
 
 SOURCES += \
     main.cpp \
-    calculatormainwindow.cpp
+    calculatormainwindow.cpp \
+    calculatorcore.cpp
 
 HEADERS += \
-    calculatormainwindow.h
+    calculatormainwindow.h \
+    calculatorcore.h
 
 FORMS += \
     calculator.ui
