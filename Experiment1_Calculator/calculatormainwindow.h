@@ -5,6 +5,8 @@
 
 #include <QMainWindow>
 
+class QKeyEvent;
+
 namespace Ui {
 class CalculatorMainWindow;
 }
@@ -22,6 +24,10 @@ private:
     void dispatchToken(const QString &token);
     void refreshDisplay();
 
+protected:
+    void keyPressEvent(QKeyEvent *event) override;
+
+private:
     Ui::CalculatorMainWindow *ui;
     CalculatorCore m_core;
 };
