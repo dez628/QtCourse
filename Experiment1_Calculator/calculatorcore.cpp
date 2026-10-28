@@ -84,6 +84,8 @@ void CalculatorCore::inputDigit(const QString &digit)
         m_waitingForOperand = false;
     } else if (m_freshInput || m_currentText == QStringLiteral("0")) {
         m_currentText = digit;
+    } else if (m_currentText == QStringLiteral("-0")) {
+        m_currentText = QStringLiteral("-") + digit;
     } else {
         int digitCount = 0;
         for (const QChar character : m_currentText) {
