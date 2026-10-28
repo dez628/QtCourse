@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/styles">
+        <file alias="calculator.qss">styles/calculator.qss</file>
+    </qresource>
+</RCC>

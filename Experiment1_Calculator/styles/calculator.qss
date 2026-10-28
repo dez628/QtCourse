@@ -1,0 +1,92 @@
+QWidget {
+    font-family: "Microsoft YaHei UI", "Segoe UI";
+    color: #172033;
+}
+
+QMainWindow {
+    background: #edf2f7;
+}
+
+QFrame#displayFrame {
+    background: #172033;
+    border-radius: 18px;
+}
+
+QLabel#expressionLabel {
+    color: #aebbd0;
+    font-size: 16px;
+    padding: 0 4px;
+}
+
+QLabel#displayLabel {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+QLabel#keyboardHintLabel {
+    color: #66758a;
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+QPushButton {
+    min-height: 58px;
+    border: none;
+    border-radius: 14px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+QPushButton[buttonRole="digit"] {
+    background: #ffffff;
+    color: #172033;
+}
+
+QPushButton[buttonRole="function"] {
+    background: #dce5ef;
+    color: #334155;
+}
+
+QPushButton[buttonRole="operator"] {
+    background: #dcecff;
+    color: #175ea8;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+QPushButton[buttonRole="equals"] {
+    background: #1677d2;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+QPushButton:hover {
+    background: #f3f7fb;
+}
+
+QPushButton[buttonRole="function"]:hover {
+    background: #cfdae7;
+}
+
+QPushButton[buttonRole="operator"]:hover {
+    background: #c8e1ff;
+}
+
+QPushButton[buttonRole="equals"]:hover {
+    background: #0f69bd;
+}
+
+QPushButton:pressed {
+    background: #e5edf5;
+}
+
+QPushButton[buttonRole="operator"]:pressed {
+    background: #b8d7fb;
+}
+
+QPushButton[buttonRole="equals"]:pressed {
+    background: #095ca9;
+}

@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>420</width>
-    <height>650</height>
+    <height>700</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>340</width>
-    <height>520</height>
+    <width>360</width>
+    <height>620</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -90,6 +90,16 @@
         </widget>
        </item>
       </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="keyboardHintLabel">
+      <property name="text">
+       <string>键盘可直接输入 · Enter 计算 · Backspace 退格 · Esc 清除</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
      </widget>
     </item>
     <item>

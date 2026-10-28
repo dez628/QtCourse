@@ -14,5 +14,8 @@ HEADERS += \
     calculatormainwindow.h \
     calculatorcore.h
 
+RESOURCES += \
+    resources.qrc
+
 FORMS += \
     calculator.ui

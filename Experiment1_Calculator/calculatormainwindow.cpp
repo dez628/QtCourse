@@ -1,6 +1,7 @@
 #include "calculatormainwindow.h"
 #include "ui_calculator.h"
 
+#include <QFile>
 #include <QKeyEvent>
 #include <QPushButton>
 
@@ -9,6 +10,15 @@ CalculatorMainWindow::CalculatorMainWindow(QWidget *parent)
     , ui(new Ui::CalculatorMainWindow)
 {
     ui->setupUi(this);
+    QFile styleFile(QStringLiteral(":/styles/calculator.qss"));
+    if (styleFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        setStyleSheet(QString::fromUtf8(styleFile.readAll()));
+    }
+    ui->displayFrame->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+    ui->keyboardHintLabel->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+    ui->mainLayout->setStretch(0, 0);
+    ui->mainLayout->setStretch(1, 0);
+    ui->mainLayout->setStretch(2, 1);
     setupButtons();
     refreshDisplay();
     setFocusPolicy(Qt::StrongFocus);
