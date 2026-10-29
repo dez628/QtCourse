@@ -57,3 +57,10 @@ Pop-Location
 
 主要功能和边界测试记录见 `docs/TESTING.md`，AI 辅助开发过程见
 `docs/AI_DEVELOPMENT.md`。
+
+## 实验交付
+
+- [实验报告](docs/实验2-简单文本编辑器实验报告.docx)
+- [视频录制脚本](docs/VIDEO_SCRIPT.md)
+- [测试记录](docs/TESTING.md)
+- [AI 辅助开发记录](docs/AI_DEVELOPMENT.md)
